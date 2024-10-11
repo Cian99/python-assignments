@@ -1,0 +1,65 @@
+Von Neumann architecture describes a general framework, or structure, that a computer's hardware, programming, 
+and data should follow. Although other structures for computing have been devised and implemented, the vast 
+majority of computers in use today operate according to the von Neumann architecture.
+
+The "von Neumann" in von Neumann architecture refers to Hungarian-American mathematician John von Neumann 
+(1903-1957). Von Neumann was initially interested in access to the fastest computers available (of which 
+there were few) during World War II in order to perform complex computations for a variety of war-related 
+problems. In 1944, Von Neumann became a consultant to the ENIAC (Electronic Numerical Integrator and Computer) 
+project, which upon its completion in 1945 became the world's first general purpose, electronic computer. Even 
+before ENIAC's completion, von Neumann and several members of the team constructing ENIAC proposed building a 
+more advanced computer, which would eventually become known as EDVAC (Electronic Discrete Variable Automatic 
+Computer). In 1945 von Neumann wrote a landmark paper entitled "The First Draft of a Report on the EDVAC," which 
+encapsulated his ideas concerning the fundamental structure that a computer should follow. That report, which Von 
+Neumann originally intended to be seen by a limited group of associates, nevertheless became widely disseminated 
+and had an immediate impact on computer development in the United States and abroad.
+
+Von Neumann followed up on his first report by producing two more papers coauthored with colleagues from the ENIAC 
+team. What emerged from these three papers was an overall structure, or architecture, which is by-and-large followed 
+to this day by the vast majority of electronic, digital computers. Von Neumann envisioned the structure of a computer 
+system as being composed of the following components: (1) the central arithmetic unit, which today is called the 
+arithmetic-logic unit (ALU). This unit performs the computer's computational and logical functions; (2) memory; more 
+specifically, the computer's main, or fast, memory, such as random access memory (RAM); (3) a control unit that directs 
+other components of the computer to perform certain actions, such as directing the fetching of data or instructions 
+from memory to be processed by the ALU; and (4) man-machine interfaces; i.e., input and output devices, such as a 
+keyboard for input and display monitor for output. Of course, computer technology has developed extensively since von 
+Neumann's time. For instance, due to integrated circuitry and miniaturization the ALU and control unit have been integrated 
+onto the same microprocessor "chip," becoming an integrated part of the computer's central processing unit (CPU).
+
+The most noteworthy concept contained in von Neumann's first report was most likely that of the stored-program principle. 
+This principle holds that data, as well as the instructions used to manipulate that data, should be stored together in the 
+same memory area of the computer. This idea deviated from the structure of previous computers. For example, ENIAC's numeric 
+data was stored in its vacuum tube memory, while the instructions that directed the processing of that data was provided by 
+certain hardware settings. That is to say, before each new computation with ENIAC, an operator set various dials, connected 
+and disconnected various electric plugs, and so forth. Those particular hardware settings represented ENIAC's programming. 
+It seemed obvious to von Neumann (as it did to several other people working on the ENIAC project) that to have a flexible, 
+truly general-purpose computer meant that the stored program principle should be implemented.
+
+One ramification of storing data and programming in the same general area of the computer's main memory is the need to 
+distinguish between the two. The contents of the typical computer's main memory is "seen" by the computer as a series of 
+zeroes and ones (i.e., binary digits, or "bits"). The computer needs direction in order to determine whether a particular 
+block of information is data or instructions. Von Neumann's control unit is the mechanism used to make the 
+data-versus-instruction determination. When the control unit initiates a call for an instruction to be fetched for processing, 
+a unit called the program counter "points" to the instruction's location in memory (i.e., its address in memory). The instruction 
+is then fetched for execution by the processor. The address in memory of any data that is required is provided by the instruction 
+itself. During this fetching and execution of an instruction, the program counter is incremented so that the next instruction can 
+be found and executed. This process is sequential, meaning that instructions are executed in an ordered, sequential fashion, one 
+instruction at a time. This serial execution of instructions is a hallmark of the von Neumann computer architecture. It is in 
+contrast to parallel processing architectures in which multiple instructions are executed in tandem. A true parallel processing 
+computer is considered a "non-von Neumann architecture" machine.
+
+To summarize the main characteristics of the von Neumann architecture, it is noted that, first of all, such a computer is 
+composed of distinct components, which are the ALU, control unit, input/output devices, and a single memory unit for storing 
+both data and instructions (i.e., the stored-program principle). Secondly, instructions are carried out sequentially, one 
+instruction at a time. As von Neumann himself recognized, the sequential execution of programming imposes a sort of "speed 
+limit" on program execution since only one instruction at a time can be handled by the computer's processor. Computer pioneer 
+John Backus called this the "von Neumann bottleneck." This bottleneck can manifest itself when the computer's CPU processes at 
+a rate faster than information can be delivered from main memory. There have been a plethora of techniques devised to make the 
+most of the sequential nature that von Neumann architecture places on computers by reducing any information bottlenecks. The 
+development of faster processors has meant that programs are executed more quickly. Processing speed has also been increased 
+by modifying the memory side of the equation, as in the case of cache memory (which basically provides a way of transferring 
+information from main memory into a smaller, faster memory device). Other techniques include wider data buses to carry information 
+more quickly between memory and the CPU; reduction of wait states (i.e., reduction of the time the CPU is required to suspend 
+processing while waiting for information from auxiliary storage); and many other speed-enhancing strategies. It must be pointed 
+out, however, that despite these advances and enhancements one is still left with the fundamental von Neumann architecture, which 
+is followed in the overwhelming majority of computers in use today. 
